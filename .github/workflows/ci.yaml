@@ -136,20 +136,22 @@ jobs:
       #       "s|backendTag:.*|backendTag: \"${GITHUB_SHA}\"|" \
       #       helm/todo-app/values.yaml
 
+    
       - name: Update frontend image tag
         working-directory: gitops
         run: |
           sed -i \
             "/repository: ghcr.io\/nikolavrtikola\/nikola-todo-frontend/{n;s/tag:.*/tag: \"${GITHUB_SHA}\"/;}" \
             helm/todo-app/values.yaml
-
+      
       - name: Update backend image tag
         working-directory: gitops
         run: |
           sed -i \
             "/repository: ghcr.io\/nikolavrtikola\/nikola-todo-backend/{n;s/tag:.*/tag: \"${GITHUB_SHA}\"/;}" \
             helm/todo-app/values.yaml
-
+      
+      - name: Commit changes
         working-directory: gitops
         run: |
           git config user.name "github-actions"
