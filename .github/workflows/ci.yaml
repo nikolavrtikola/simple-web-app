@@ -15,8 +15,8 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  FRONTEND_IMAGE: ghcr.io/${{ github.repository_owner }}/todo-frontend
-  BACKEND_IMAGE: ghcr.io/${{ github.repository_owner }}/todo-backend
+  FRONTEND_IMAGE: ghcr.io/${{ github.repository_owner }}/nikola-todo-frontend
+  BACKEND_IMAGE: ghcr.io/${{ github.repository_owner }}/nikola-todo-backend
 
 jobs:
 
