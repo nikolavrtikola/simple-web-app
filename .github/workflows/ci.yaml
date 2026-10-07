@@ -149,8 +149,7 @@ jobs:
           sed -i \
             "/repository: ghcr.io\/nikolavrtikola\/nikola-todo-backend/{n;s/tag:.*/tag: \"${GITHUB_SHA}\"/;}" \
             helm/todo-app/values.yaml
-------------------------------------------------------------------------------------
-      - name: Commit changes
+
         working-directory: gitops
         run: |
           git config user.name "github-actions"
