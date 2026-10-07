@@ -43,8 +43,8 @@ function App() {
 
   return (
     <div className="container">
-      <h1>My Todo App=Promena Vezba Ucam Nov Den Novi predizvici!!!</h1>
-      <h1>JaVol</h1>
+      <h1>My Todo App</h1>
+      <h1>Proba za Pull request ci/cd ;)</h1>
 
       <div className="input-row">
         <input
