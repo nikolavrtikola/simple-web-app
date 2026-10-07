@@ -121,7 +121,7 @@ jobs:
       - name: Checkout GitOps repository
         uses: actions/checkout@v4
         with:
-          repository: YOUR_USERNAME/todo-gitops
+          repository: nikolavrtikola/todo-gitops
           token: ${{ secrets.GITOPS_TOKEN }}
           path: gitops
 
