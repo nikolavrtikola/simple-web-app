@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="container">
       <h1>My Todo App</h1>
-      <h1>Proba za Pull request ci/cd ;)</h1>
+      <h1>Proba za Pull request ci/cd ;)Pravam Promena Push</h1>
 
       <div className="input-row">
         <input
